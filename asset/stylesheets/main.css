@@ -1,0 +1,1240 @@
+@import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  background-color: #151515;
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #caced2;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.owl-stage-outer {
+  height: 100%;
+}
+
+.owl-dot:focus {
+  outline: none;
+}
+
+*::-moz-selection {
+  background-color: #ff9191;
+  color: #ffffff;
+}
+
+*::selection {
+  background-color: #ff9191;
+  color: #ffffff;
+}
+
+/*Start Font Vazir*/
+@font-face {
+  font-family: Vazir;
+  src: url("../../node_modules/vazir-font/dist/Vazir.eot");
+  src: url("../../node_modules/vazir-font/dist/Vazir.eot?#iefix") format("embedded-opentype"), url("../../node_modules/vazir-font/dist/Vazir.woff2") format("woff2"), url("../../node_modules/vazir-font/dist/Vazir.woff") format("woff"), url("../../node_modules/vazir-font/dist/Vazir.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("../../node_modules/vazir-font/dist/Vazir-Bold.eot");
+  src: url("../../node_modules/vazir-font/dist/Vazir-Bold.eot?#iefix") format("embedded-opentype"), url("../../node_modules/vazir-font/dist/Vazir-Bold.woff2") format("woff2"), url("../../node_modules/vazir-font/dist/Vazir-Bold.woff") format("woff"), url("../../node_modules/vazir-font/dist/Vazir-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("../../node_modules/vazir-font/dist/Vazir-Black.eot");
+  src: url("../../node_modules/vazir-font/dist/Vazir-Black.eot?#iefix") format("embedded-opentype"), url("../../node_modules/vazir-font/dist/Vazir-Black.woff2") format("woff2"), url("../../node_modules/vazir-font/dist/Vazir-Black.woff") format("woff"), url("../../node_modules/vazir-font/dist/Vazir-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("../../node_modules/vazir-font/dist/Vazir-Medium.eot");
+  src: url("../../node_modules/vazir-font/dist/Vazir-Medium.eot?#iefix") format("embedded-opentype"), url("../../node_modules/vazir-font/dist/Vazir-Medium.woff2") format("woff2"), url("../../node_modules/vazir-font/dist/Vazir-Medium.woff") format("woff"), url("../../node_modules/vazir-font/dist/Vazir-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("../../node_modules/vazir-font/dist/Vazir-Light.eot");
+  src: url("../../node_modules/vazir-font/dist/Vazir-Light.eot?#iefix") format("embedded-opentype"), url("../../node_modules/vazir-font/dist/Vazir-Light.woff2") format("woff2"), url("../../node_modules/vazir-font/dist/Vazir-Light.woff") format("woff"), url("../../node_modules/vazir-font/dist/Vazir-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("../../node_modules/vazir-font/dist/Vazir-Thin.eot");
+  src: url("../../node_modules/vazir-font/dist/Vazir-Thin.eot?#iefix") format("embedded-opentype"), url("../../node_modules/vazir-font/dist/Vazir-Thin.woff2") format("woff2"), url("../../node_modules/vazir-font/dist/Vazir-Thin.woff") format("woff"), url("../../node_modules/vazir-font/dist/Vazir-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/*End Font Vazir*/
+/*font 'Fredericka the Great', cursive*/
+/**
+ * * Basic typography style for copy text * *
+**/
+.header .header__content h1,
+.header .header__content p {
+  color: #ffffff;
+  font-size: 600;
+  line-height: 1.8;
+  direction: rtl;
+  text-align: center;
+  font-family: Vazir;
+}
+
+@media (min-width: 0) {
+  .header .header__content h1 {
+    font-size: 30px;
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+  }
+  .header .header__content p {
+    font-size: 20px;
+    padding: 0 30px;
+    -webkit-transform: translate(0, -10px);
+    transform: translate(0, 0);
+  }
+}
+
+@media (min-width: 767.98px) {
+  .header .header__content h1 {
+    font-size: 50px;
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+  }
+  .header .header__content p {
+    font-size: 38px;
+    padding: 0 85px;
+    -webkit-transform: translate(0, -10px);
+    transform: translate(0, 0);
+  }
+}
+
+@media (min-width: 991.98px) {
+  .header .header__content h1 {
+    font-size: 60px;
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+  }
+  .header .header__content p {
+    font-size: 40px;
+    padding: 0 200px;
+    -webkit-transform: translate(0, -10px);
+            transform: translate(0, -10px);
+  }
+}
+
+@media (min-width: 1199.98px) {
+  .header .header__content h1 {
+    font-size: 72px;
+    -webkit-transform: translate(0, -90px);
+            transform: translate(0, -90px);
+  }
+  .header .header__content p {
+    font-size: 40px;
+    padding: 0 260px;
+    -webkit-transform: translate(0, -50px);
+            transform: translate(0, -50px);
+  }
+}
+
+.section-content .section-content__title {
+  color: #fdbc2c;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.8;
+  direction: rtl;
+  text-align: center;
+  font-family: Vazir;
+  margin: 6rem 0 0 0;
+}
+
+.section-content .section-content__body {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.8;
+  direction: rtl;
+  text-align: center;
+  font-family: Vazir;
+  margin: 2rem 0 0 0;
+}
+
+.section-content .section-content__about .about-item i {
+  color: #D94F2B;
+}
+
+.section-content .section-content__about .about-item h3 {
+  color: #fdbc2c;
+  font-size: 20px;
+  direction: rtl;
+  text-align: center;
+  font-family: Vazir;
+  margin: 15px 0 0 0;
+}
+
+.section-content .section-content__about .about-item p {
+  color: #ffffff;
+  font-size: 17px;
+  direction: rtl;
+  text-align: center;
+  font-family: Vazir;
+  margin: 15px 25px 0 25px;
+}
+
+.pizza-slider__content .pizza-slider__title {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: bold;
+  direction: rtl;
+  text-align: center;
+  font-family: Vazir;
+}
+
+.pizza-slider__content .pizza-slider__money {
+  color: #fdbc2c;
+  font-size: 24px;
+  font-weight: bold;
+  direction: rtl;
+  text-align: center;
+  font-family: Vazir;
+  margin: 0 0 0 0;
+}
+
+.pizza-slider__content .pizza-slider__body {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  direction: rtl;
+  text-align: center;
+  font-family: Vazir;
+  margin: 20px 0 50px 0;
+}
+
+.pizza-slider__content .pizza-slider__btn {
+  color: #fdbc2c;
+  font-size: 18px;
+  font-weight: 600;
+  direction: rtl;
+  text-align: center;
+  font-family: Vazir;
+  border: #fdbc2c 1px solid;
+  text-decoration: none;
+  padding: 12px 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.pizza-slider__content .pizza-slider__btn:hover {
+  background: #fdbc2c;
+  color: #ffffff;
+  border: none;
+  padding: 12px 40px;
+}
+
+.pizza-crete .pizza-create__content .pizza-create__content-title {
+  color: #fdbc2c;
+  font-weight: bold;
+  direction: rtl;
+  text-align: center;
+  font-family: Vazir;
+}
+
+@media (min-width: 0) {
+  .pizza-crete .pizza-create__content .pizza-create__content-title {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .pizza-crete .pizza-create__content .pizza-create__content-title {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .pizza-crete .pizza-create__content .pizza-create__content-title {
+    font-size: 50px;
+  }
+}
+
+.pizza-crete .pizza-create__content .pizza-create__content-body {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  direction: rtl;
+  text-align: center;
+  font-family: Vazir;
+  margin: 20px 0 0 0;
+}
+
+@media (min-width: 0) {
+  .pizza-crete .pizza-create__content .pizza-create__content-body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .pizza-crete .pizza-create__content .pizza-create__content-body {
+    font-size: 20px;
+  }
+}
+
+.pizza-crete .create-more .create-more__title .one:before {
+  content: "1";
+}
+
+.pizza-crete .create-more .create-more__title .two:before {
+  content: "2";
+}
+
+.pizza-crete .create-more .create-more__title .three:before {
+  content: "3";
+}
+
+.pizza-crete .create-more .create-more__title .four:before {
+  content: "4";
+}
+
+.pizza-crete .create-more .create-more__title h3:before {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 40px;
+  margin-left: 20px;
+  color: #d94f2b;
+  font-weight: 300;
+}
+
+.pizza-crete .create-more .create-more__title h3 {
+  color: #fdbc2c;
+  font-size: 22px;
+  font-weight: 500;
+  direction: rtl;
+  font-family: Vazir;
+}
+
+.pizza-crete .create-more .create-more__title a {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 100;
+  direction: rtl;
+  font-family: Vazir;
+  text-decoration: none;
+}
+
+.pizza-crete .create-more .more-content {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 0) {
+  .pizza-crete .create-more .more-content {
+    padding-right: 0;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .pizza-crete .create-more .more-content {
+    padding-right: 40px;
+    margin-top: 50px;
+  }
+}
+
+.pizza-crete .create-more .more-content p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 100;
+  direction: rtl;
+  font-family: Vazir;
+}
+
+.pizza-crete .create-more .more-content ul {
+  list-style: square;
+  color: #d25f26;
+  direction: rtl;
+  text-align: right;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 18px;
+  font-family: Vazir;
+}
+
+@media (min-width: 0) {
+  .pizza-crete .create-more .more-content ul {
+    margin-right: 21px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .pizza-crete .create-more .more-content ul {
+    margin-right: 21px;
+  }
+}
+
+.parent-counter {
+  margin: 30px 10px;
+  border-radius: 50%;
+  border: 3px solid #d94f2b;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.parent-counter:hover {
+  background-color: #d94f2b;
+  border: 3px solid #ffffff;
+}
+
+.parent-counter .counter {
+  font-family: "Fredericka the Great", cursive;
+  color: #ffffff;
+  font-size: 60px;
+  cursor: default;
+}
+
+.parent-counter h3 {
+  cursor: default;
+  font-family: Vazir;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.user-comment .user-comment__title {
+  color: #fdbc2c;
+  font-size: bold;
+  direction: rtl;
+  text-align: center;
+  font-family: Vazir;
+  margin: 0 0 0 0;
+}
+
+@media (min-width: 0) {
+  .user-comment .user-comment__title {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .user-comment .user-comment__title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .user-comment .user-comment__title {
+    font-size: 35px;
+  }
+}
+
+.user-comment .user-comment__body {
+  color: #ffffff;
+  font-size: bold;
+  direction: rtl;
+  text-align: center;
+  font-family: Vazir;
+  margin: 30px 0 0 0;
+}
+
+@media (min-width: 0) {
+  .user-comment .user-comment__body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .user-comment .user-comment__body {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .user-comment .user-comment__body {
+    font-size: 23px;
+  }
+}
+
+.user-comment .card .card-body h2 {
+  color: #fdbc2c;
+  font-size: bold;
+  line-height: bold;
+  direction: rtl;
+  text-align: center;
+  font-family: Vazir;
+  cursor: default;
+}
+
+.user-comment .card .card-body p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  direction: rtl;
+  text-align: center;
+  font-family: Vazir;
+  padding: 15px;
+  margin: 20px 0 0 0;
+  border: 4px solid #d94f2b;
+}
+
+.user-comment .card .card-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.user-comment .card .card-footer h3 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  direction: rtl;
+  text-align: center;
+  font-family: Vazir;
+  padding: 15px;
+  margin: 20px 0 0 0;
+  cursor: default;
+}
+
+.user-comment .card .card-footer a {
+  color: #d94f2b;
+  font-size: 16px;
+  font-weight: bold;
+  direction: rtl;
+  text-align: center;
+  font-family: Vazir;
+  text-decoration: none;
+}
+
+.user-comment .card .card-footer a:hover {
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.app-android .container .app-android__content {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 0) {
+  .app-android .container .app-android__content {
+    padding: 42px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .app-android .container .app-android__content {
+    padding-right: 80px;
+  }
+}
+
+.app-android .container .app-android__content h2 {
+  color: #fdbc2c;
+  font-weight: bold;
+  direction: rtl;
+  text-align: right;
+  font-family: Vazir;
+}
+
+@media (min-width: 0) {
+  .app-android .container .app-android__content h2 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .app-android .container .app-android__content h2 {
+    font-size: 32px;
+  }
+}
+
+.app-android .container .app-android__content p {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: right;
+  direction: rtl;
+  font-family: Vazir;
+  margin: 40px 0 120px 0;
+}
+
+.app-android .container .app-android__content ul {
+  list-style: square;
+  color: #d94f2b;
+  font-family: Vazir;
+  text-align: right;
+  direction: rtl;
+  margin-top: 30px;
+  font-size: 21px;
+}
+
+.app-android .container .app-android__content .app-btn a {
+  text-decoration: none;
+  background-color: #fdbc2c;
+  border: 2px solid #fdbc2c;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  direction: rtl;
+  font-family: Vazir;
+  padding: 17px 20px;
+  margin: 60px 0 0 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media (min-width: 0) {
+  .app-android .container .app-android__content .app-btn a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .app-android .container .app-android__content .app-btn a {
+    width: auto;
+    margin-left: 20px;
+  }
+}
+
+.app-android .container .app-android__content .app-btn a:hover {
+  background: #d94f2b;
+  color: #ffffff;
+}
+
+.nav .nav-item {
+  text-align: center;
+  font-size: 22px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  font-family: Vazir;
+}
+
+.nav .nav-item:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 1, 1, 0.6)), to(rgba(1, 1, 1, 0.6))), url(../image/bg-header.jpg);
+  background: linear-gradient(rgba(1, 1, 1, 0.6), rgba(1, 1, 1, 0.6)), url(../image/bg-header.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  background: url(../image/pattern-body.jpg);
+  background-repeat: repeat;
+}
+
+footer {
+  padding-top: 100px;
+  background: url(../image/pattern-body.jpg);
+  background-repeat: repeat;
+  text-align: center;
+}
+
+footer .footer__number {
+  margin-bottom: 30px;
+}
+
+footer .footer__number a {
+  font-family: "Fredericka the Great", cursive;
+  text-decoration: none;
+  color: #c74428;
+  font-size: 55px;
+}
+
+@media (min-width: 0) {
+  footer .footer__number a {
+    font-size: 30px;
+  }
+}
+
+footer .footer__mail {
+  padding-bottom: 30px;
+}
+
+footer .footer__mail a {
+  font-family: "Fredericka the Great", cursive;
+  text-decoration: none;
+  color: #c74428;
+  font-size: 25px;
+}
+
+@media (min-width: 0) {
+  footer .footer__mail a {
+    font-size: 20px;
+  }
+}
+
+footer .footer__image {
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #151515;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.section-menu a {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 30px;
+  font-size: 22px;
+}
+
+.section-menu .section-menu__toggle-menu {
+  background-color: #000000;
+  height: inherit;
+}
+
+.section-menu .section-menu__logo {
+  margin: 10px 0;
+}
+
+.section-menu .section-menu__shopping-cart {
+  background-color: #fdbc2c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-content .section-content__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.section-content .section-content__about .about-item {
+  margin-top: 70px;
+}
+
+@media (min-width: 991.98px) {
+  .section-content .section-content__about .about-item {
+    -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+  }
+}
+
+.pizza-slider {
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 52, 2, 0.8)), to(rgba(255, 52, 2, 0.8))), url(../image/pattern-1.png);
+  background: linear-gradient(rgba(255, 52, 2, 0.8), rgba(255, 52, 2, 0.8)), url(../image/pattern-1.png);
+}
+
+.pizza-slider .pizza-slider__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  position: absolute;
+  left: 0;
+  top: -55px;
+  width: 100%;
+}
+
+.pizza-slider .pizza-slider__slider .pizza-slider__content {
+  text-align: center;
+  height: 300px;
+  padding: 15px;
+}
+
+@media (min-width: 0) {
+  .pizza-slider {
+    height: 800px;
+  }
+  .pizza-slider .pizza-slider__slider {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .pizza-slider .slider-img {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 440px;
+    width: 440px;
+  }
+  .pizza-slider .pizza-slider__content {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .pizza-slider {
+    height: 461px;
+  }
+  .pizza-slider .pizza-slider__slider {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .pizza-slider .slider-img {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    display: block;
+  }
+  .pizza-slider .pizza-slider__content {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    position: relative;
+    top: 122px;
+    left: 33px;
+    margin-top: 0;
+  }
+}
+
+.pizza-crete {
+  padding-top: 130px;
+}
+
+.pizza-crete .create-more__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pizza-crete .create-more__more .more-image {
+  margin-bottom: 30px;
+  border: 2px solid #d94f2b;
+  padding: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.pizza-crete .create-more__more .more-image img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 0) {
+  .pizza-crete .create-more__more .more-image {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .pizza-crete .create-more__more .more-image {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media (min-width: 0) {
+  .pizza-crete .create-more__more .more-content {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .pizza-crete .create-more__more .more-content {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+.pizza-crete .pizza__create-more {
+  margin-top: 100px;
+}
+
+.pizza-crete .create-more .create-more__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  border-top: 1.4px solid #424040;
+  padding: 30px 0;
+}
+
+.pizza-sum {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 1, 1, 0.6)), to(rgba(1, 1, 1, 0.6))), url(../image/bg-1.jpg);
+  background: linear-gradient(rgba(1, 1, 1, 0.6), rgba(1, 1, 1, 0.6)), url(../image/bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  margin-top: 30px;
+}
+
+.pizza-sum .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.user-comment {
+  padding-top: 50px;
+}
+
+.user-comment .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.user-comment .cards .card {
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 0) {
+  .user-comment .cards .card {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .user-comment .cards .card {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .user-comment .cards .card {
+    -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+  }
+}
+
+.user-comment .cards .card .card-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 25px;
+}
+
+.app-android {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 1, 1, 0.5)), to(rgba(1, 1, 1, 0.5))), url(../image/bg-2.jpg);
+  background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url(../image/bg-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+.app-android .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 0) {
+  .app-android .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 0;
+    width: 100%;
+  }
+  .app-android .container .app-android__img {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .app-android .container .app-android__img img {
+    width: 250px;
+    height: 250px;
+  }
+  .app-android .container .app-android__content {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-top: 80px;
+  }
+  .app-android .container .app-android__content .app-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .app-android .container .app-android__img img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .app-android .container {
+    width: 98%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .app-android .container .app-android__img {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  .app-android .container .app-android__img img {
+    width: 369px;
+    height: 752px;
+  }
+  .app-android .container .app-android__content {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    margin-top: 0;
+  }
+}
+
+.send-mail {
+  background-color: #fdbc2c;
+  padding: 50px 0;
+}
+
+.send-mail .container {
+  text-align: center;
+}
+
+.send-mail .container h2 {
+  color: #000000;
+  font-size: 35px;
+  font-weight: bold;
+  direction: rtl;
+  font-family: Vazir;
+}
+
+@media (min-width: 0) {
+  .send-mail .container h2 {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .send-mail .container h2 {
+    font-size: 35px;
+  }
+}
+
+.send-mail .container form {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.send-mail .container form input[type=email] {
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  font-size: 20px;
+  direction: rtl;
+  text-align: right;
+  color: #000000;
+  font-weight: bold;
+  font-family: Vazir;
+}
+
+@media (min-width: 0) {
+  .send-mail .container form input[type=email] {
+    margin-left: 0;
+    width: 100%;
+    padding: 18px 45px;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .send-mail .container form input[type=email] {
+    width: 400px;
+    margin-left: 10px;
+    padding: 18px 10px;
+  }
+}
+
+.send-mail .container form input[type=email]:focus {
+  outline: none;
+  background: transparent;
+  color: c-black;
+}
+
+.send-mail .container form input[type=submit] {
+  background-color: #000000;
+  color: #fdbc2c;
+  padding: 0 50px;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Vazir;
+  border: 2px solid #000000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.send-mail .container form input[type=submit]:hover {
+  background-color: #fdbc2c;
+  color: #000000;
+  font-weight: bold;
+}
+
+@media (min-width: 0) {
+  .send-mail .container form input[type=submit] {
+    margin-top: 20px;
+    padding: 8px;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .send-mail .container form input[type=submit] {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .send-mail .container form input[type=submit] {
+    margin-top: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

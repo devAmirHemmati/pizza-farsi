@@ -1,0 +1,34 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar{
+    background-color: $c-dark;
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #caced2;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto; 
+}
+
+.owl-stage-outer{
+    height: 100%;
+}
+
+.owl-dot:focus{
+    outline: none;
+}
+
+*::selection{
+    background-color: $c-selection;
+    color: $c-white;
+}

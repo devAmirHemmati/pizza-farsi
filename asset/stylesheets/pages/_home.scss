@@ -1,0 +1,379 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.section-menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: $c-dark;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  a {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $c-white;
+    text-decoration: none;
+    padding: 0 30px;
+    font-size: 22px;
+  }
+
+  .section-menu__toggle-menu {
+    background-color: $c-black;
+    height: inherit;
+  }
+
+  .section-menu__logo {
+    margin: 10px 0;
+  }
+
+  .section-menu__shopping-cart {
+    background-color: $c-yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.section-content {
+  .section-content__about {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 80px;
+    .about-item {
+      margin-top: 70px;
+    }
+    @include risponsive("md") {
+      .about-item {
+        flex-basis: 33.33%;
+      }
+    }
+  }
+}
+
+.pizza-slider {
+  position: relative;
+  background: linear-gradient(rgba(255, 52, 2, 0.8), rgba(255, 52, 2, 0.8)),
+    url(../image/pattern-1.png);
+
+  .pizza-slider__slider {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    position: absolute;
+    left: 0;
+    top: -55px;
+    // flex-wrap: wrap;
+    width: 100%;
+
+    .pizza-slider__content{
+        // flex-basis: 60%;
+        text-align: center;
+        height: 300px;
+        padding: 15px;
+    }
+  }
+
+  @include risponsive("xm"){
+    height: 800px;
+    .pizza-slider__slider{
+        flex-wrap: wrap;
+    }
+
+    .slider-img {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        height: 440px;
+        width: 440px;
+    }
+
+    .pizza-slider__content{
+        flex-basis: 100%;
+        margin-top: 50px
+    }
+  }
+
+  @include risponsive("md"){
+    height: 461px;
+    .pizza-slider__slider{
+        flex-wrap: nowrap;
+    }
+
+    .slider-img {
+        flex-basis: 40%;
+        display: block;
+    }
+
+    .pizza-slider__content{
+        flex-basis: 60%;
+        position: relative;
+        top: 122px;
+        left: 33px;
+        margin-top: 0;
+    }
+  }
+}
+
+.pizza-crete{
+    padding-top: 130px;
+
+    .create-more__more{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        .more-image{
+            margin-bottom: 30px;
+            border: 2px solid $c-border;
+            padding: 12px;
+            box-sizing: border-box;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            
+            @include risponsive("xm"){
+              flex-basis: 100%;
+            }
+            @include risponsive("md"){
+              flex-basis: 50%;              
+            }
+        }
+
+        .more-content{
+          @include risponsive("xm"){
+            flex-basis: 100%;
+          }
+          @include risponsive("md"){
+            flex-basis: 50%;              
+          }
+        }
+    }
+    .pizza__create-more{
+      margin-top: 100px;            
+    }
+    .create-more{
+            .create-more__title{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                border-top: 1.4px solid #424040;
+                padding: 30px 0;
+            }
+    }
+}
+
+.pizza-sum{
+  background: linear-gradient(rgba(0.7,0.7,0.7,0.6),rgba(0.7,0.7,0.7,0.6)),url(../image/bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  margin-top: 30px;
+
+  .container{
+    // margin: 0 150px !important;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.user-comment{
+  padding-top: 50px;
+
+  .cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .card{
+      padding: 0 20px;
+      box-sizing: border-box;
+      margin-top: 70px;
+      margin-bottom: 30px;
+      @include  risponsive("xm"){
+        flex-basis: 100%;
+      }
+
+      @include risponsive('sm'){
+        flex-basis: 50%;
+      }
+  
+      @include  risponsive("md"){
+        flex-basis: 33.33%;
+      }
+      .card-img{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+.app-android{
+  background: linear-gradient(rgba(0.7,0.7,0.7,0.5),rgba(0.7,0.7,0.7,0.5)),url(../image/bg-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 70px;
+  padding-bottom: 40px;
+
+
+  .container{
+    display: flex;
+
+    @include risponsive("xm"){
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      margin: 0 ;
+      width: 100%;
+      // justify-content: center;
+      .app-android__img{
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        img{
+          width: 250px;
+          height: 250px
+        }
+      }
+      .app-android__content{
+        flex-basis: 100%;
+        margin-top: 80px;
+
+        .app-btn{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+        }
+      }
+    }
+
+    @include risponsive(sm){
+      .app-android__img{
+        img{
+          width: 400px;
+          height: 400px
+        }
+      }
+    }
+
+    @include risponsive("md"){
+      width: 98%;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      .app-android__img{
+        flex-basis: auto;
+        img{
+          width: 369px;
+          height: 752px;
+        }
+      }
+      .app-android__content{
+        flex-basis: auto;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.send-mail{
+  background-color: $c-yellow;
+  padding: 50px 0;
+  .container{
+    text-align: center;
+
+    h2{
+      @include risponsive("xm"){
+        font-size: 25px;
+      }
+      @include risponsive("sm"){
+        font-size: 35px;
+      }
+      @include typography(
+        $c-black,
+        35px,
+        bold,
+        null,
+        rtl,
+        null,
+        $f-vazir,
+        null,
+        null    
+    );
+    }
+
+    form{
+      margin-top: 40px;
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      input[type=email]{
+        @include risponsive("xm"){
+          margin-left: 0 ;
+          width: 100% ;
+          padding: 18px 45px;
+        }
+        @include risponsive("sm"){
+          width: 400px;
+          margin-left: 10px;
+          padding: 18px 10px;
+        }
+        border: 2px solid $c-black;
+        background-color: $c-white;
+        font-size: 20px;
+        direction: rtl;
+        text-align:right;
+        color: $c-black;
+        font-weight: bold;
+        font-family: $f-vazir;
+        &:focus{
+          outline:none;
+          background: transparent;
+          color: c-black;       
+        }
+      }
+
+      input[type=submit]{
+        background-color: $c-black;
+        color: $c-yellow;
+        padding: 0 50px;
+        outline: none;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: $f-vazir;
+        border: 2px solid $c-black;
+        transition: 0.4s;
+        &:hover{
+          background-color: $c-yellow;
+          color: $c-black;
+          font-weight: bold;
+        }
+
+        @include risponsive("xm"){
+          margin-top: 20px;
+          padding: 8px
+        }
+        @include risponsive("sm"){
+          margin-top: 0;
+        }
+        @include risponsive("md"){
+          margin-top: 0
+        }
+      }
+    }
+  }
+}

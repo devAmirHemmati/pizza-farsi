@@ -1,0 +1,42 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+footer{
+    padding-top: 100px;
+    background: url(../image/pattern-body.jpg);
+    background-repeat: repeat;
+    text-align: center;
+
+    .footer__number{
+        margin-bottom: 30px;
+        a{
+            font-family: $f-FTG;
+            text-decoration: none;
+            color: #c74428;
+            @include risponsive("xm"){
+                font-size: 30px;
+            }
+            font-size: 55px;
+        }
+    }
+
+    .footer__mail{
+        a{
+            font-family: $f-FTG;
+            text-decoration: none;
+            color: #c74428;
+            @include risponsive("xm"){
+                font-size: 20px
+            }
+            font-size: 25px;
+        }
+        padding-bottom: 30px;
+    }
+
+    .footer__image{
+        padding-bottom: 10px;
+        display:flex;
+        justify-content: center;
+    }
+}

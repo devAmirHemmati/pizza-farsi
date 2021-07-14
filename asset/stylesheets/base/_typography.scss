@@ -1,0 +1,601 @@
+/**
+ * * Basic typography style for copy text * *
+**/
+.header {
+  .header__content {
+    h1,
+    p {
+      @include typography(
+        $c-white,
+        600,
+        null,
+        1.8,
+        rtl,
+        center,
+        $f-vazir,
+        null,
+        null
+      );
+    }
+
+    @include risponsive("xm") {
+      h1 {
+        font-size: 30px;
+        transform: translate(0, -30px);
+      }
+
+      p {
+        font-size: 20px;
+        padding: 0 30px;
+        -webkit-transform: translate(0, -10px);
+        transform: translate(0, 0);
+      }
+    }
+    @include risponsive("sm") {
+      h1 {
+        font-size: 50px;
+        transform: translate(0, -30px);
+      }
+
+      p {
+        font-size: 38px;
+        padding: 0 85px;
+        -webkit-transform: translate(0, -10px);
+        transform: translate(0, 0);
+      }
+    }
+    @include risponsive("md") {
+      h1 {
+        font-size: 60px;
+        transform: translate(0, -30px);
+      }
+
+      p {
+        font-size: 40px;
+        padding: 0 200px;
+        transform: translate(0, -10px);
+      }
+    }
+    @include risponsive("lg") {
+      h1 {
+        font-size: 72px;
+        transform: translate(0, -90px);
+      }
+
+      p {
+        font-size: 40px;
+        padding: 0 260px;
+        transform: translate(0, -50px);
+      }
+    }
+  }
+}
+
+.section-content {
+  .section-content__title {
+    @include typography(
+      $c-yellow,
+      22px,
+      600,
+      1.8,
+      rtl,
+      center,
+      $f-vazir,
+      null,
+      6rem 0 0 0
+    );
+  }
+
+  .section-content__body {
+    @include typography(
+      $c-white,
+      16px,
+      600,
+      1.8,
+      rtl,
+      center,
+      $f-vazir,
+      null,
+      2rem 0 0 0
+    );
+  }
+
+  .section-content__about {
+    .about-item {
+      i {
+        color: $icon-color;
+      }
+
+      h3 {
+        @include typography(
+          $c-yellow,
+          20px,
+          null,
+          null,
+          rtl,
+          center,
+          $f-vazir,
+          null,
+          15px 0 0 0
+        );
+      }
+
+      p {
+        @include typography(
+          $c-white,
+          17px,
+          null,
+          null,
+          rtl,
+          center,
+          $f-vazir,
+          null,
+          15px 25px 0 25px
+        );
+      }
+    }
+  }
+}
+
+.pizza-slider__content {
+  .pizza-slider__title {
+    @include typography(
+      $c-white,
+      42px,
+      bold,
+      null,
+      rtl,
+      center,
+      $f-vazir,
+      null,
+      null
+    );
+  }
+
+  .pizza-slider__money {
+    @include typography(
+      $c-yellow,
+      24px,
+      bold,
+      null,
+      rtl,
+      center,
+      $f-vazir,
+      null,
+      0 0 0 0
+    );
+  }
+
+  .pizza-slider__body {
+    @include typography(
+      $c-white,
+      20px,
+      bold,
+      null,
+      rtl,
+      center,
+      $f-vazir,
+      null,
+      20px 0 50px 0
+    );
+  }
+
+  .pizza-slider__btn {
+    @include typography(
+      $c-yellow,
+      18px,
+      600,
+      null,
+      rtl,
+      center,
+      $f-vazir,
+      null,
+      null
+    );
+    border: $c-yellow 1px solid;
+    text-decoration: none;
+    padding: 12px 25px;
+    transition: 0.3s;
+    &:hover {
+      background: $c-yellow;
+      color: $c-white;
+      border: none;
+      padding: 12px 40px;
+    }
+  }
+}
+
+.pizza-crete {
+  .pizza-create__content {
+    .pizza-create__content-title {
+      @include typography(
+        $c-yellow,
+        null,
+        bold,
+        null,
+        rtl,
+        center,
+        $f-vazir,
+        null,
+        null
+      );
+      @include risponsive("xm") {
+        font-size: 32px;
+      }
+      @include risponsive("sm") {
+        font-size: 38px;
+      }
+      @include risponsive("md") {
+        font-size: 50px;
+      }
+    }
+
+    .pizza-create__content-body {
+      @include typography(
+        $c-white,
+        20px,
+        600,
+        null,
+        rtl,
+        center,
+        $f-vazir,
+        null,
+        20px 0 0 0
+      );
+      @include risponsive("xm") {
+        font-size: 16px;
+      }
+      @include risponsive("sm") {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .create-more {
+    .create-more__title {
+      .one:before {
+        content: "1";
+      }
+      .two:before {
+        content: "2";
+      }
+      .three:before {
+        content: "3";
+      }
+      .four:before {
+        content: "4";
+      }
+
+      h3:before {
+        font-family: $f-FTG;
+        font-size: 40px;
+        margin-left: 20px;
+        color: $c-border;
+        font-weight: 300;
+      }
+      h3 {
+        @include typography(
+          $c-yellow,
+          22px,
+          500,
+          null,
+          rtl,
+          null,
+          $f-vazir,
+          null,
+          null
+        );
+      }
+
+      a {
+        @include typography(
+          $c-white,
+          30px,
+          100,
+          null,
+          rtl,
+          null,
+          $f-vazir,
+          null,
+          null
+        );
+        text-decoration: none;
+      }
+    }
+    .more-content {
+      box-sizing: border-box;
+      @include risponsive("xm") {
+        padding-right: 0;
+        margin-top: 0;
+      }
+      @include risponsive("md") {
+        padding-right: 40px;
+        margin-top: 50px;
+      }
+
+      p {
+        @include typography(
+          $c-white,
+          18px,
+          100,
+          null,
+          rtl,
+          null,
+          $f-vazir,
+          null,
+          null
+        );
+      }
+
+      ul {
+        list-style: square;
+        color: #d25f26;
+        direction: rtl;
+        text-align: right;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        font-size: 18px;
+        font-family: $f-vazir;
+        @include risponsive("xm") {
+          margin-right: 21px;
+        }
+        @include risponsive("md") {
+          margin-right: 21px;
+        }
+      }
+    }
+  }
+}
+
+.parent-counter {
+  margin: 30px 10px;
+  border-radius: 50%;
+  border: 3px solid $c-border;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+  &:hover {
+    background-color: $c-border;
+    border: 3px solid $c-white;
+  }
+  .counter {
+    font-family: $f-FTG;
+    color: $c-white;
+    font-size: 60px;
+    cursor: default;
+  }
+  h3 {
+    cursor: default;
+    font-family: $f-vazir;
+    color: $c-white;
+    font-size: 30px;
+    font-weight: 400;
+  }
+}
+
+.user-comment {
+  .user-comment__title {
+    @include typography(
+      $c-yellow,
+      bold,
+      null,
+      null,
+      rtl,
+      center,
+      $f-vazir,
+      null,
+      0 0 0 0
+    );
+
+    @include risponsive("xm") {
+      font-size: 22px;
+    }
+
+    @include risponsive("sm") {
+      font-size: 30px;
+    }
+
+    @include risponsive("md") {
+      font-size: 35px;
+    }
+  }
+
+  .user-comment__body {
+    @include typography(
+      $c-white,
+      bold,
+      null,
+      null,
+      rtl,
+      center,
+      $f-vazir,
+      null,
+      30px 0 0 0
+    );
+
+    @include risponsive("xm") {
+      font-size: 16px;
+    }
+
+    @include risponsive("sm") {
+      font-size: 20px;
+    }
+
+    @include risponsive("md") {
+      font-size: 23px;
+    }
+  }
+}
+
+.user-comment {
+  .card {
+    .card-body {
+      h2 {
+        @include typography(
+          $c-yellow,
+          bold,
+          null,
+          bold,
+          rtl,
+          center,
+          $f-vazir,
+          null,
+          null
+        );
+        cursor: default;
+      }
+
+      p{
+        @include typography(
+            $c-white,
+            18px,
+            bold,
+            null,
+            rtl,
+            center,
+            $f-vazir,
+            15px,
+            20px 0 0 0
+          );
+          border: 4px solid $c-border;
+      }
+    }
+
+    .card-footer{
+        margin-top: 20px;
+        text-align: center;
+        h3{
+            @include typography(
+            $c-white,
+            18px,
+            bold,
+            null,
+            rtl,
+            center,
+            $f-vazir,
+            15px,
+            20px 0 0 0
+          );
+          cursor: default;
+        }
+
+        a{
+            @include typography(
+            $c-border,
+            16px,
+            bold,
+            null,
+            rtl,
+            center,
+            $f-vazir,
+            null,
+            null
+          );
+
+          text-decoration: none;
+          &:hover{
+              text-decoration: underline;
+                font-size: 18px;
+          }
+        }
+    }
+  }
+}
+
+
+.app-android{
+    .container{
+        .app-android__content{
+            box-sizing: border-box;
+            @include risponsive("xm"){
+              padding: 42px;
+            }
+            @include risponsive("md"){
+              padding-right: 80px;
+            }
+            h2{
+              @include risponsive("xm"){
+                font-size: 22px
+              }
+              @include risponsive("md"){
+                font-size: 32px
+              }
+                @include typography(
+                    $c-yellow,
+                    null,
+                    bold,
+                    null,
+                    rtl,
+                    right,
+                    $f-vazir,
+                    null,
+                    null
+                );
+            }
+
+            p{
+                @include typography(
+                    $c-white,
+                    20px,
+                    300,
+                    right,
+                    rtl,
+                    null,
+                    $f-vazir,
+                    null,
+                    40px 0 120px 0
+                )
+            }
+
+            ul{
+                list-style: square;
+                color: $c-border;
+                font-family: $f-vazir;
+                text-align: right;
+                direction: rtl;
+                margin-top: 30px;
+                font-size: 21px;
+            }
+
+            .app-btn{
+                a{
+                    text-decoration: none;
+                    background-color: $c-yellow;
+                    border: 2px solid $c-yellow;
+                    // margin-left: 10px;
+                    @include typography(
+                        $c-black,
+                        20px,
+                        bold,
+                        null,
+                        rtl,
+                        null,
+                        $f-vazir,
+                        17px 20px,
+                        60px 0 0 0    
+                    );
+
+                    @include risponsive("xm"){
+                      width: 100%;
+                      text-align: center;
+                    }
+                    @include risponsive("md"){
+                      width: auto;
+                      margin-left: 20px;
+                    }
+                    transition: 0.4s;
+                    &:hover{
+                        background: $c-border;
+                        color: $c-white;
+                    }
+                }
+
+            }
+        }
+    }
+}

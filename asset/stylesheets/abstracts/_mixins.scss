@@ -1,0 +1,59 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+@mixin typography($color,$font-size,$font-weight,$line-height,$dir,$text-align,$font-family,$padding,$margin) {
+  @if($color != null){
+    color: $color;
+  }
+  @if($font-size != null){
+    font-size: $font-size;
+  }
+  @if($font-weight != null){
+    font-weight: $font-weight;
+  }
+  @if($line-height != null){
+    line-height: $line-height;
+  }
+  @if($dir != null){
+    direction: $dir;
+  }
+  @if($text-align != null){
+    text-align: $text-align;
+  }
+  @if($font-family != null){
+    font-family: $font-family;
+  }
+  @if($padding != null){
+    padding: $padding;
+  }
+  @if($font-family != null){
+    margin: $margin;
+  }
+}
+
+@mixin risponsive($size) {
+  @if ($size == "xm") {
+    @media (min-width: 0) {
+      @content;
+    }
+  } 
+
+  @else if($size == "sm") {
+    @media (min-width: 767.98px) {
+      @content;
+    }
+  } 
+
+  @else if($size == "md") {
+    @media (min-width: 991.98px) {
+      @content;
+    }
+  }
+  
+  @else if($size == "lg") {
+    @media (min-width: 1199.98px) {
+      @content;
+    }
+  }
+}

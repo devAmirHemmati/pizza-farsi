@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the nav of the site/application.
+// -----------------------------------------------------------------------------
+
+.nav{
+    .nav-item{
+        text-align: center;
+        font-size: 22px;
+        transition: all 0.2s;
+        font-family: $f-vazir;
+        &:hover{
+            background-color: #fff;
+            color: black;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Pizza-Farsi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirreza-hemmati/Pizza-Farsi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amirreza-hemmati/Pizza-Farsi/issues"
+  },
+  "homepage": "https://github.com/amirreza-hemmati/Pizza-Farsi#readme",
+  "dependencies": {
+    "vazir-font": "^21.0.1"
+  }
+}
